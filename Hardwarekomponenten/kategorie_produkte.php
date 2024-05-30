@@ -5,7 +5,7 @@ require("includes/conn.inc.php");
 
 $idKat = 0; //kennzeichnet, dass keine idKat übergeben wurde
 if(count($_GET)>0 && isset($_GET["idKat"])) {
-	$idKat = intval($_GET["idKat"]);
+	$idKat = intval($_GET["idKat"]); //to return onyl int value
 }
 ?>
 <!doctype html>
